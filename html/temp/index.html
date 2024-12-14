@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color:rgb(255, 144, 238);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 13px 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            font-size: 12pt;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #c075c1;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 12pt;
+        }
+        input[type="submit"]:hover {
+            background-color: #a04545;
+        }
+        h1 {
+            color: pink;
+        }
+        .check {
+            display: inline;
+            font-weight: 500;
+            color:rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="position">Position applied for:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="resume">Resume:</label>
+            <textarea id="resume" name="resume" rows="4" required></textarea>
+
+            <label for="coverletter">Cover letter:</label>
+            <textarea id="coverletter" name="coverletter" rows="4" required></textarea>
+
+            <label for="checkbox">Checkbox input:</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label class="check">Have experience</label>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
