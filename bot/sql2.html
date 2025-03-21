@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Bot 3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <p style="margin-bottom: 3em"></p>
+    <div class="container h-100">
+		<div class="row">
+			<div class="col-md-8 offset-md-1">
+                <h1>Подключение базы данных к боту</h1>
+                <br>
+                <h4>Создание таблицы для бота</h4>
+                1. В папке нашего сервера (где хранится файл manage.py) создать новый файл python под названием database.py, импортировать в него библиотеку sqlite и написать код, который создает новую базу данных с именем database.sqlite создает в ней таблицу с именем phrases с тремя полями: id integer – первичный ключ, phrase text, answer text. Запустить программу.
+                <br>
+                <br>
+                Скопируйте код в поле ниже:
+                <textarea  class="form-control" rows="1"></textarea>
+                <br>
+                Теперь комментируем код, который создает базу данных. 
+                <br>
+                2. Добавить в БД значения в соответствии с таблицей<br>
+                
+                <img src="img/image7.png"><br><br>
+                Скопируйте код в поле ниже:
+                <textarea  class="form-control" rows="1"></textarea>
+                <br>
+                Комментируем код
+                <br>
+                3. Сделать запрос к таблице и вывести все записи в командную строку.
+                <br>
+                <br>
+                Скопируйте код в поле ниже:
+                <textarea  class="form-control" rows="1"></textarea>
+                <br>
+                <br>
+                Комментируем код
+                <br>
+                4. Создаем функцию для добавления значений в БД
+                <br>
+                <img src="img/image8.png"><br><br>
+                5. Создаем функцию для получения значений из БД
+                <br>
+                <img src="img/image9.png"><br><br>
+                6. Импортируем файл database.py в файл views.py <code> import database</code>. Меняем функцию index, теперь бот в ответ на наши сообщения будет писать фразы из нашей БД.
+                <br>
+                <img src="img/image10.png"><br><br>
+                7. Реагируем на фразы, которых нет в БД. Добавляем elif, в котором проверяем, что мы проверили все записи из БД и не нашли ни одной подходящей 
+                <br>
+                <img src="img/image11.png"><br><br>
+                8. Техническое задание: дать возможность пользователю пополнять нашу БД. Пользователь будет писать сообщения в формате: "Фраза пользователя/Ответ бота", и мы должны сохранить фразы в БД.
+                <br>
+                <br>
+                8.1. Найдите способ проверить наличие символа "/" в строке в Python
+                <br>
+                8.2 Напишите условие, если в сообщение пользователя содержится символ "/", вывести в консоль (print) фразу "В сообщении /".
+                <br>
+                8.3 Теперь нужно раздеить сообщение (split) по символу /, и вывести в консоль два сообщения, первое - фраза до /, второе - фраза после /
+                <br>
+                8.4 Разберитесь как работает функция insert_db из файла database.py, чтобы ее использовать в файле views.py нужно написать <code>database.insert_db(...)</code>.
+                <br>
+                8.5 Используя эту функцию добавить в БД фразы, переданные пользователем.
+                <br>
+                8.6 После добавления фраз, отправьте пользователю сообщение о том, что фраза сохранена
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
