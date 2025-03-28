@@ -1,8 +1,9 @@
 
 
+
 var areas = document.getElementsByTagName("textarea");
 
-var itemList = JSON.parse(localStorage.getItem("qList"));
+var itemList = JSON.parse(localStorage.getItem(name));
 if (itemList === null) {
     itemList = {};
 }
@@ -19,5 +20,6 @@ function change() {
     for (var i=0; i < areas.length; i++) {
         itemList[i] = areas[i].value;
     }
-    localStorage.setItem("qList", JSON.stringify(itemList));
+    localStorage.setItem(name, JSON.stringify(itemList));
 }
+
