@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Bot 6</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <p style="margin-bottom: 3em"></p>
+    <div class="container h-100">
+		<div class="row">
+			<div class="col-md-8 offset-md-1">
+                <h1>Создание интерфейса администратора</h1>
+                <br>
+                <h6>Задание 1. Создаем html документ для авторизации</h6>
+                Сверстаем простую страничку авторизации с помощью html (в папке templates). В теге main создать div c class - wrapper. Содержащий форму с двумя input text c id username и password и input submit c id - submit. Также добавим тег нового абзаца с надписью Incorrect username or password. И добавим ему класс hidden. Для этого класса создадим css правило с visibility - hidden. Стили по желанию и для простоты, напишем их в этом же файле в теге style
+                <br>
+                <br>
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Показать ответ (открывать только в крайнем случае)
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <img src="img/image24.png" width="100%" height="auto">
+                     </div>
+                  </div>
+
+                  <h6>Задание 2. Пишем бэкенд часть </h6>
+                  <img src="img/image25.png" width="500px" height="auto">
+                  <br>
+                  Проверьте, что теперь можете окрыть страницу 127.0.0.1/bot_admin в браузере
+                  <br>
+                  <br>
+                  <h6>Дописываем функцию admin</h6>
+                  <img src="img/image26.png" width="500px" height="auto">
+                  <br>
+                  Теперь она возвращает написанный нами файл
+                  <br>
+                  <br>
+                  <h6>Задание 3. Скопирйте файл script.js из папки templates в свою папку templates</h6>
+                <h6>Добавить обработку этого файла</h6>
+                <img src="img/image27.png" width="500px" height="auto">
+                <br>
+                <img src="img/image28.png" width="500px" height="auto">
+                <br>
+                <br>
+                <h6>Добавить обработку запроса клиента на сервере</h6>
+                <img src="img/image29.png" width="500px" height="auto">
+                <br>
+                Добавить запрос в файл urls.py 
+                <br>
+                <img src="img/image30.png" width="500px" height="auto">
+                <br>
+                <br>
+                <h6>Задание 4. Пишем функцию для получения всех групп в файле database.py</h6>
+                <img src="img/image31.png" width="500px" height="auto">
+                <br>
+                <br>
+                <h6>Создаем файл admin.html в папке templates</h6>
+                <img src="img/image32.png" width="500px" height="auto">
+                <br>
+                Попробуйте теперь ввести логин и пароль - admin admin и проверьте, что можете войти
+                <br>
+                <br>
+                Осталось дописать функцию client_server на ввод сообщений администратором и организация массовой рассылки
+                <br>
+                <img src="img/image33.png" width="500px" height="auto">
+                <br>
+                <br>
+                И напишем функцию get_member
+                <br>
+                <img src="img/image34.png" width="500px" height="auto">
+                <br>
+                <br>
+                В файле settings.py найдите или создайте переменную CORS_ORIGIN_WHITELIST = [] и добавьте в кавычках ссылку из ngrok, проверьте работу
+
+            </div>
+        </div>
+    </div>
+    
+    <script> var name = 'qList6'; </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
